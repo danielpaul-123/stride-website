@@ -174,9 +174,9 @@ document.addEventListener("DOMContentLoaded", function () {
             disableOnInteraction: false,
         },
         breakpoints: {
-            320: { slidesPerView: 1, spaceBetween: 10 },  // Phones
-            480: { slidesPerView: 2, spaceBetween: 15 },  // Small tablets
-            768: { slidesPerView: 3, spaceBetween: 20 },  // Tablets
+            320: { slidesPerView: 2, spaceBetween: 10 },  // Phones
+            480: { slidesPerView: 3, spaceBetween: 15 },  // Small tablets
+            768: { slidesPerView: 4, spaceBetween: 20 },  // Tablets
             1024: { slidesPerView: 4, spaceBetween: 30 }  // Desktops
         }
     });
