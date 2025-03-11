@@ -163,3 +163,21 @@ window.addEventListener('DOMContentLoaded', () => {
         }, 500);
     });
 }); 
+
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3, // Default for larger screens
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            320: { slidesPerView: 1, spaceBetween: 10 },  // Phones
+            480: { slidesPerView: 2, spaceBetween: 15 },  // Small tablets
+            768: { slidesPerView: 3, spaceBetween: 20 },  // Tablets
+            1024: { slidesPerView: 4, spaceBetween: 30 }  // Desktops
+        }
+    });
+});
