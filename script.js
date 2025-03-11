@@ -166,7 +166,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".swiper-container", {
-        slidesPerView: 3, // Default for larger screens
+        slidesPerView: 2, // Default for larger screens
         spaceBetween: 30,
         loop: true,
         autoplay: {

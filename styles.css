@@ -1333,13 +1333,15 @@ p {
     width: 100%;
     overflow: hidden;
     padding: 20px 20px;
+    /* background-color: var(--light-gray); */
 }
+
 .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100px; /* Set a fixed width */
-    height: 100px; /* Set a fixed height */
+    height: 75px; /* Set a fixed height */
     box-sizing: border-box;
 }
 
