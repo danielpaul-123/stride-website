@@ -72,6 +72,12 @@ window.addEventListener('scroll', () => {
                 }
             });
         }
+
+        if (sectionId =='hero' && scrollPosition < 100) {
+            document.querySelectorAll('nav ul li a').forEach(link => {
+                link.classList.remove('active');
+            });
+        }
     });
 });
 
@@ -85,49 +91,49 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Form submission
-const contactForm = document.querySelector('.contact-form form');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+// // Form submission
+// const contactForm = document.querySelector('.contact-form form');
+// if (contactForm) {
+//     contactForm.addEventListener('submit', (e) => {
+//         e.preventDefault();
         
-        // Get form values
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
+//         // Get form values
+//         const name = document.getElementById('name').value;
+//         const email = document.getElementById('email').value;
+//         const message = document.getElementById('message').value;
         
-        // Simple validation
-        if (!name || !email || !message) {
-            alert('Please fill in all fields');
-            return;
-        }
+//         // Simple validation
+//         if (!name || !email || !message) {
+//             alert('Please fill in all fields');
+//             return;
+//         }
         
-        // Here you would typically send the form data to a server
-        // For demo purposes, we'll just show a success message
-        alert('Thank you for your message! We will get back to you soon.');
-        contactForm.reset();
-    });
-}
+//         // Here you would typically send the form data to a server
+//         // For demo purposes, we'll just show a success message
+//         alert('Thank you for your message! We will get back to you soon.');
+//         contactForm.reset();
+//     });
+// }
 
-// Newsletter subscription
-const newsletterForm = document.querySelector('.footer-newsletter form');
-if (newsletterForm) {
-    newsletterForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+// // Newsletter subscription
+// const newsletterForm = document.querySelector('.footer-newsletter form');
+// if (newsletterForm) {
+//     newsletterForm.addEventListener('submit', (e) => {
+//         e.preventDefault();
         
-        const email = newsletterForm.querySelector('input[type="email"]').value;
+//         const email = newsletterForm.querySelector('input[type="email"]').value;
         
-        if (!email) {
-            alert('Please enter your email address');
-            return;
-        }
+//         if (!email) {
+//             alert('Please enter your email address');
+//             return;
+//         }
         
-        // Here you would typically send the subscription to a server
-        // For demo purposes, we'll just show a success message
-        alert('Thank you for subscribing to our newsletter!');
-        newsletterForm.reset();
-    });
-}
+//         // Here you would typically send the subscription to a server
+//         // For demo purposes, we'll just show a success message
+//         alert('Thank you for subscribing to our newsletter!');
+//         newsletterForm.reset();
+//     });
+// }
 
 // Animation on scroll
 window.addEventListener('DOMContentLoaded', () => {
