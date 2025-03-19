@@ -1359,6 +1359,19 @@ p {
     flex-wrap: wrap;
 }
 
+.ppt-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    /* gap: 20px; */
+    flex-wrap: wrap;
+}
+
+.ppt-buttons a{
+    font-weight: bold;
+    font-size: large;
+}
+
 .btn-blue {
     background: var(--dark-blue);
     color: var(--white);
@@ -2132,4 +2145,13 @@ footer {
         height: 22px;
         font-size: 14px;
     }
+    .about-image{
+        display: none;
+    }
+}
+
+.about-video{
+    margin-top: 50px;
+    max-width: 640px;
+    max-height: 424px;
 }
